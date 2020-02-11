@@ -1,6 +1,7 @@
 import React from 'react';
+import MonthlyInventory from './MonthlyInventory'
 
-const availableProduce = [
+let availableProduce = [
    {
       month: "January",
       selection: [
@@ -272,9 +273,17 @@ const availableProduce = [
 function Inventory() {
   return (
     <div className="Inventory">
-
+      {
+        availableProduce.map((thing, index) =>
+          <MonthlyInventory
+            month={thing.month}
+            selection={thing.selection}
+            key={index}
+          />
+      )}
     </div>
   );
 }
+
 
 export default Inventory;
