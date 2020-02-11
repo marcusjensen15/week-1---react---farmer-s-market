@@ -3,9 +3,20 @@ import PropTypes from "prop-types";
 
 
 function Appointment(props) {
+  let apptStyle = {
+    border: '2px solid black',
+    margin: '5px',
+    padding: '15px',
+    backgroundColor: 'white',
+    textAlign: 'center',
+    // listStylePosition: 'inside'
+  }
+  let listStyler = {
+    listStyleType: 'none'
+  }
   return (
-    <div className="Appointment">
-      <ul>
+    <div className="Appointment" style={apptStyle}>
+      <ul style={listStyler}>
         <li>{props.day}</li>
         <li>{props.location}</li>
         <li>{props.hours}</li>

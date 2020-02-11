@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 
 
 function MonthlyInventory(props) {
-
+    let monthlyStyle = {
+      border: '2px solid black',
+      margin: '5px',
+      padding: '15px'
+    }
 
     function get_selection(props) {
       let table = []
@@ -15,7 +19,7 @@ function MonthlyInventory(props) {
 
 
     return (
-      <div className="MonthlyInventory" id ="MonthlyInventory">
+      <div className="MonthlyInventory" id ="MonthlyInventory" style={monthlyStyle}>
       <h3>Month: {props.month}</h3>
       <h5> Selection: </h5>
       <ul>

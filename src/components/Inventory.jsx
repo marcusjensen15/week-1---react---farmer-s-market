@@ -271,8 +271,12 @@ let availableProduce = [
 ];
 
 function Inventory() {
+  let invStyle = {
+    padding: '40px'
+  }
+
   return (
-    <div className="Inventory">
+    <div className="Inventory" style={invStyle}>
       {
         availableProduce.map((thing, index) =>
           <MonthlyInventory
