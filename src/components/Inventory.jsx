@@ -272,7 +272,13 @@ let availableProduce = [
 
 function Inventory() {
   let invStyle = {
-    padding: '40px'
+    padding: '40px',
+    display: 'grid',
+    border: '15px solid rgb(255,0,150)',
+    boxShadow: '10px 15px #1f1c1a',
+    borderRadius: '20px',
+    backgroundColor: 'rgb(200,175,255)',
+    margin: '15px'
   }
 
   return (

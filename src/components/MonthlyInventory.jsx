@@ -6,8 +6,17 @@ function MonthlyInventory(props) {
     let monthlyStyle = {
       border: '2px solid black',
       margin: '5px',
-      padding: '15px'
+      padding: '15px',
+      margin: '5px',
+      padding: '15px',
+      backgroundColor: 'white',
+      textAlign: 'center'
     }
+    let listStylez = {
+      listStyleType: 'none',
+      paddingLeft: '0'
+    }
+
 
     function get_selection(props) {
       let table = []
@@ -20,9 +29,9 @@ function MonthlyInventory(props) {
 
     return (
       <div className="MonthlyInventory" id ="MonthlyInventory" style={monthlyStyle}>
-      <h3>Month: {props.month}</h3>
-      <h5> Selection: </h5>
-      <ul>
+      <h3>Month:{props.month}</h3>
+      <h5>Selection:</h5>
+      <ul style={listStylez}>
       {get_selection(props)}
       </ul>
       </div>

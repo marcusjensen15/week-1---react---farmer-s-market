@@ -7,6 +7,7 @@ function App() {
   let heroText = {
     textAlign: 'center'
   }
+  
   return (
     <div className="App">
       <h1 style={heroText}>Markety Markenton</h1>
