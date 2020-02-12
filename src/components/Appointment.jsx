@@ -5,10 +5,13 @@ import PropTypes from "prop-types";
 function Appointment(props) {
   let apptStyle = {
     border: '2px solid black',
+    borderRadius: '100px',
     margin: '5px',
     padding: '15px',
     backgroundColor: 'white',
     textAlign: 'center',
+    fontFamily: 'sans-serif',
+    fontSize: '25px'
     // listStylePosition: 'inside'
   }
   let listStyler = {

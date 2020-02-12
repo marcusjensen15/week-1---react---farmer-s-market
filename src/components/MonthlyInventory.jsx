@@ -5,12 +5,15 @@ import PropTypes from "prop-types";
 function MonthlyInventory(props) {
     let monthlyStyle = {
       border: '2px solid black',
+      borderRadius: '1000px',
       margin: '5px',
       padding: '15px',
       margin: '5px',
       padding: '15px',
       backgroundColor: 'white',
-      textAlign: 'center'
+      textAlign: 'center',
+      fontFamily: 'sans-serif',
+      fontSize: '25px'
     }
     let listStylez = {
       listStyleType: 'none',
